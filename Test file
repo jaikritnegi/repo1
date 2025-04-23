@@ -1,3 +1,5 @@
+PSFBSAZROMOKJJOGBFHOGIALOHBNLGACDLDAMBEKBN
+65341C03B3206bd17+11026291B220c8429dc7NCBC
 kubectl apply -f 'https://install.portworx.com/3.2?comp=pxoperator&kbver=1.31.7&ns=portworx'
 kubectl apply -f 'https://install.portworx.com/3.2?operator=true&mc=false&kbver=1.31.7&ns=portworx&b=true&iop=6&c=px-cluster-676a0737-c0eb-45ee-a237-5ef33cd3ce99&stork=true&csi=true&mon=true&tel=true&st=k8s&promop=true'
 This is 1st commmit
