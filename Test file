@@ -1,3 +1,21 @@
+ot@rh-vm-03 softbank]# k logs -f -n kube-flannel kube-flannel-ds-7gtw6
+Defaulted container "kube-flannel" out of: kube-flannel, install-cni-plugin (init), install-cni (init)
+I0428 04:49:37.567007       1 main.go:211] CLI flags config: {etcdEndpoints:http://127.0.0.1:4001,http://127.0.0.1:2379 etcdPrefix:/coreos.com/network etcdKeyfile: etcdCertfile: etcdCAFile: etcdUsername: etcdPassword: version:false kubeSubnetMgr:true kubeApiUrl: kubeAnnotationPrefix:flannel.alpha.coreos.com kubeConfigFile: iface:[] ifaceRegex:[] ipMasq:true ifaceCanReach: subnetFile:/run/flannel/subnet.env publicIP: publicIPv6: subnetLeaseRenewMargin:60 healthzIP:0.0.0.0 healthzPort:0 iptablesResyncSeconds:5 iptablesForwardRules:true netConfPath:/etc/kube-flannel/net-conf.json setNodeNetworkUnavailable:true}
+W0428 04:49:37.567101       1 client_config.go:618] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+I0428 04:49:37.580046       1 kube.go:139] Waiting 10m0s for node controller to sync
+I0428 04:49:37.580075       1 kube.go:469] Starting kube subnet manager
+I0428 04:49:37.583718       1 kube.go:490] Creating the node lease for IPv4. This is the n.Spec.PodCIDRs: [10.244.0.0/24]
+I0428 04:49:37.583802       1 kube.go:490] Creating the node lease for IPv4. This is the n.Spec.PodCIDRs: [10.244.2.0/24]
+I0428 04:49:37.583821       1 kube.go:490] Creating the node lease for IPv4. This is the n.Spec.PodCIDRs: [10.244.1.0/24]
+I0428 04:49:38.580206       1 kube.go:146] Node controller sync successful
+I0428 04:49:38.580231       1 main.go:231] Created subnet manager: Kubernetes Subnet Manager - rh-vm08
+I0428 04:49:38.580236       1 main.go:234] Installing signal handlers
+I0428 04:49:38.580368       1 main.go:468] Found network config - Backend type: vxlan
+E0428 04:49:38.580420       1 main.go:268] Failed to check br_netfilter: stat /proc/sys/net/bridge/bridge-nf-call-iptables: no such file or directory
+
+
+
+
 apiVersion: v1
 clusters:
 - cluster:
