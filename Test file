@@ -1,3 +1,5 @@
+| jq -r ‘.manifest’ | jq -r ‘.’
+
 curl --location 'https://cloud.portworx.io/core/v1/clusters/clu:11376c76-6de8-41a1-9653-afa3a8edae09:reregister' \
 --header 'px-account-id: ten:acc:51a5e0ba-9b3a-4c51-800e-7d7836eb8068' \
 --header 'Server: awselb/2.0' \
