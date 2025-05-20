@@ -1,3 +1,5 @@
+curl --ftp-ssl --ftp-port 443 -u softbank:DrKthhKkCC4D -T /tmp/a.txt "https://ftps.purestorage.com"
+
 | jq -r ‘.manifest’ | jq -r ‘.’
 
 curl --location 'https://cloud.portworx.io/core/v1/clusters/clu:11376c76-6de8-41a1-9653-afa3a8edae09:reregister' \
